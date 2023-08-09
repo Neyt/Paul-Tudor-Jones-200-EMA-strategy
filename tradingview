@@ -1,0 +1,22 @@
+//@version=4
+strategy("Paul Tudor Jones 200 EMA Strategy", overlay=true)
+
+// Calculate the 200-day Exponential Moving Average
+ema200 = ema(close, 200)
+
+// Buy Condition: Price crosses above the 200-day EMA
+buyCondition = crossover(close, ema200)
+
+// Sell Condition: Price crosses below the 200-day EMA
+sellCondition = crossunder(close, ema200)
+
+// Execute Buy and Sell Orders
+strategy.entry("Buy", strategy.long, when = buyCondition)
+strategy.close("Buy", when = sellCondition)
+
+// Plot the 200-day EMA on the chart
+plot(ema200, color=color.blue, title="200-day EMA")
+
+// Plot Buy and Sell Signals on the chart
+plotshape(series=buyCondition, title="Buy Signal", location=location.belowbar, color=color.green, style=shape.labelup, text="Buy")
+plotshape(series=sellCondition, title="Sell Signal", location=location.abovebar, color=color.red, style=shape.labeldown, text="Sell")
