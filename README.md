@@ -2,6 +2,8 @@
 Paul Tudor Jone Back test stock buy and hold , vs 200 EMA strategy
 
 https://www.youtube.com/watch?v=k8M6N9lYTww
+[https://www.tradingview.com/i/gRCJUsMN/](https://www.tradingview.com/script/gRCJUsMN-Paul-Tudor-Joness-EMA-200-Cross-Strategy/)
+
 
 Paul Tudor Jones is a renowned hedge fund manager and philanthropist, and he's known for his macro trading strategies. One of the strategies attributed to him involves the use of the 200-day Exponential Moving Average (EMA).
 
